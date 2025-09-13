@@ -1,5 +1,6 @@
 package com.ai.gemini_chat;
 
+
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/qna")
 @AllArgsConstructor // to generate constructors with all parameters: autowiring
+@RequestMapping("/api/qna")
 public class AIController {
 
     private final QnAService qnAService ;
